@@ -75,6 +75,49 @@
         .btn:hover {
             opacity: 0.9;
         }
+        .info-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.info-box {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.info-box h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #004f9e;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
+.contact p {
+  margin: 8px 0;
+  word-break: break-all;
+}
+
+@media screen and (max-width: 800px) {
+  .info-area {
+    grid-template-columns: 1fr;
+  }
+}
         css
 
 .btn:hover {
@@ -106,36 +149,35 @@ transition: all 0.3s;
             
             <a href="https://x.com" target="_blank" class="btn">X（旧Twitter）をチェック</a>
             
-            </div>
-        <h2>スキル</h2>
+  <div class="info-area">
 
-<ul>
+  <div class="info-box">
+    <h2>スキル</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>GitHub</li>
+    </ul>
+  </div>
 
-<li>HTML</li>
+  <div class="info-box">
+    <h2>自己紹介表</h2>
+    <table border="1">
+      <tr><th>項目</th><th>内容</th></tr>
+      <tr><td>名前</td><td>自分の名前</td></tr>
+      <tr><td>出身</td><td>東京都</td></tr>
+      <tr><td>趣味</td><td>読書</td></tr>
+    </table>
+  </div>
 
-<li>CSS</li>
+  <div class="info-box contact">
+    <h2>連絡先</h2>
+    <p>メール：<a href="mailto:your@email.com">your@email.com</a></p>
+    <p>GitHub：<a href="https://github.com/yourname" target="_blank">github.com/yourname</a></p>
+  </div>
 
-<li>GitHub</li>
-
-</ul>
-        <h2>自己紹介表</h2>
-
-<table border="1">
-
-<tr><th>項目</th><th>内容</th></tr>
-
-<tr><td>名前</td><td>自分の名前</td></tr>
-
-<tr><td>出身</td><td>東京都</td></tr>
-
-<tr><td>趣味</td><td>読書</td></tr>
-
-</table>
-        <p>メール：<a href="mailto:your@email.com">your@email.com</a></p>
-
-<p>GitHub：<a href="https://github.com/yourname" target="_blank">github.com/yourname</a></p>
-        
-    </div>
+</div>
+﻿
 
 </body>
 </html>
